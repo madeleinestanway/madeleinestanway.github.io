@@ -1,0 +1,104 @@
+/*
+$color1: rgba(234, 203, 210, 1);
+$color2: rgba(223, 174, 180, 1);
+$color3: rgba(221, 154, 194, 1);
+$color4: rgba(180, 134, 171, 1);
+$color5: rgba(130, 102, 127, 1);*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lexend Exa', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#Content {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+#Nav {
+    width: 100%;
+    background: #001c3f;
+    position: relative;
+    padding: 10px;
+    flex: 0 1 auto;
+    box-sizing: border-box;
+}
+
+#InnerNav {
+    display: flex;
+    justify-content: center;
+}
+
+#Nav .nav-brand {
+    color: #b0d6fc;
+}
+
+#Nav #Language {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+.language-list {
+    list-style: none;
+}
+
+.language-list li {
+    font-size: 1.5em;
+    color: #b0d6fc;
+    font-weight: 800;
+    display: none;
+}
+
+.language-list li.active {
+    display: initial;
+}
+
+#Main {
+    flex: 1 1 auto;
+    display: flex;
+    overflow: hidden;
+}
+
+#LeftContent {
+    background: #001c3f;
+    width: 200px;
+    float: left;
+    height: 100%;
+    flex: 1 1 auto;
+    display: flex;
+}
+
+#RightContent {
+    background: #001c3f;
+    flex: 0 0 450px;
+}
+
+#LeftContent h1 {
+    place-self: center;
+    width: 100%;
+    text-align: center;
+    color: #b0d6fc;
+}
+
+#RightContent h1 {
+    place-self: start;
+    width: 100%;
+    text-align: left;
+    color: #e9ebf8;
+}
+
+#CVContent {
+    padding-top: 20px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    max-height: 100%;
+    overflow-y: scroll;
+}
