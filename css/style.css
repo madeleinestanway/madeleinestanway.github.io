@@ -16,6 +16,11 @@ body {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: #b0d6fc;
+}
+
 #Content {
     display: flex;
     flex-flow: column;
@@ -79,6 +84,7 @@ body {
 #RightContent {
     background: #001c3f;
     flex: 0 0 450px;
+    width: 450px;
 }
 
 #LeftContent h1 {
@@ -88,11 +94,9 @@ body {
     color: #b0d6fc;
 }
 
-#RightContent h1 {
-    place-self: start;
-    width: 100%;
-    text-align: left;
+#RightContent h2 {
     color: #e9ebf8;
+    margin-bottom: 20px;
 }
 
 #CVContent {
@@ -101,4 +105,15 @@ body {
     overflow-y: scroll;
     max-height: 100%;
     overflow-y: scroll;
+}
+
+#CVContent div {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+#CVContent h2,
+#CVContent p {
+    overflow-wrap: break-word;
+    color: white;
 }
